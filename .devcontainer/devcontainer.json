@@ -1,0 +1,14 @@
+{
+	"name": "Debian",
+	"image": "mcr.microsoft.com/devcontainers/base:bullseye",
+	"postCreateCommand": "curl -fsSL https://raw.githubusercontent.com/databricks/setup-cli/main/install.sh | sudo sh && databricks --version",
+	"customizations": {
+		"vscode": {
+			"extensions": [
+				"openai.chatgpt",
+				"databricks.databricks",
+				"databricks.sqltools-databricks-driver"
+			]
+		}
+	}
+}
